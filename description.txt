@@ -1,0 +1,9 @@
+modern_ish: a mod that is very modern_ish.
+
+A mod for minetest that add various decorative nodes.  No craft recipes.  Meant to be used in creative mode.
+
+featuring many modern things such as modern ceiling tiles, various lights, various retro-esq computer related things.
+and more.
+
+and more to come.
+
