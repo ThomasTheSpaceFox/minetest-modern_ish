@@ -24,6 +24,20 @@ minetest.register_node("modern_ish:stuff_terminal_computer", {
   paramtype2 = "facedir",
   description = "a terminal based computer.",
 })
+minetest.register_node("modern_ish:stuff_gui_computer", {
+  tiles = {"modern_ish_generic_tech_plain.png","modern_ish_generic_tech_bottom.png","modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_vent.png", "modern_ish_stuff_gui_computer_front.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 4,
+  paramtype2 = "facedir",
+  description = "a gui based computer.",
+})
+minetest.register_node("modern_ish:stuff_control_1", {
+  tiles = {"modern_ish_stuff_control_1.png","modern_ish_generic_tech_bottom.png","modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_vent.png", "modern_ish_generic_tech_vent.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 1,
+  paramtype2 = "facedir",
+  description = "control 1: assorted controls complete with tape reader and cup holder.",
+})
 minetest.register_node("modern_ish:stuff_tape_drive", {
   tiles = {"modern_ish_generic_tech_plain.png","modern_ish_generic_tech_bottom.png","modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_vent.png", "modern_ish_stuff_tape_drive_front.png"},
   groups = {snappy=1, choppy=2},
@@ -37,6 +51,20 @@ minetest.register_node("modern_ish:stuff_server_rack_1", {
   light_source = 1,
   paramtype2 = "facedir",
   description = "server rack 1",
+})
+minetest.register_node("modern_ish:stuff_megacomputer_plain", {
+  tiles = {"modern_ish_generic_tech_plain.png","modern_ish_generic_tech_bottom.png","modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_plain.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 1,
+  paramtype2 = "facedir",
+  description = "plain generic megacomputer block",
+})
+minetest.register_node("modern_ish:stuff_megacomputer_vent", {
+  tiles = {"modern_ish_generic_tech_vent.png","modern_ish_generic_tech_bottom.png","modern_ish_generic_tech_vent.png", "modern_ish_generic_tech_vent.png", "modern_ish_generic_tech_vent.png", "modern_ish_generic_tech_vent.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 1,
+  paramtype2 = "facedir",
+  description = "vented generic megacomputer block",
 })
 
 --ceiling tile stuff
@@ -110,6 +138,58 @@ minetest.register_node("modern_ish:floor_pattern_2", {
   light_source = 0,
   description = "patterned floor 2.",
 })
+--climbing walls and ladders and such.
+minetest.register_node("modern_ish:wall_climbing_wall_1", {
+  tiles = {"modern_ish_wall_climb1.png"},
+  inventory_image = "modern_ish_wall_climb1.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  climbable = true,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "a modern climbing wall",
+  selection_box = {
+    type = "wallmounted",
+    },
+})
+minetest.register_node("modern_ish:wallmount_pipe_ladder", {
+  tiles = {"modern_ish_wallmount_pipe_ladder.png"},
+  inventory_image = "modern_ish_wallmount_pipe_ladder.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  climbable = true,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "a wallmounted pipe ladder",
+  selection_box = {
+    type = "wallmounted",
+    },
+})
+--glass
+minetest.register_node("modern_ish:stuff_steel_glass", {
+  tiles = {"modern_ish_stuff_steel_glass1.png"},
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  drawtype = "glasslike",
+  sunlight_propagates = true,
+  description = "smooth, steel-framed glass",
+})
+minetest.register_node("modern_ish:stuff_steel_glass_opaque", {
+  tiles = {"modern_ish_stuff_steel_glass_opaque.png"},
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  drawtype = "glasslike",
+  sunlight_propagates = true,
+  description = "steel-framed glass that keeps out prying eyes.",
+})
+
+
+--various signs
+
 
 --more nodes
 minetest.register_node("modern_ish:systems_air_duct", {
