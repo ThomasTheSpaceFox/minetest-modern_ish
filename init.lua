@@ -31,6 +31,21 @@ minetest.register_node("modern_ish:stuff_gui_computer", {
   paramtype2 = "facedir",
   description = "a gui based computer.",
 })
+minetest.register_node("modern_ish:stuff_terminal_flatscreen", {
+  tiles = {"modern_ish_stuff_terminal_flatscreen.png"},
+  inventory_image = "modern_ish_stuff_terminal_flatscreen.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 4,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "a flatscreen terminal.",
+  selection_box = {
+    type = "wallmounted",
+    },
+})
 minetest.register_node("modern_ish:stuff_control_1", {
   tiles = {"modern_ish_stuff_control_1.png","modern_ish_generic_tech_bottom.png","modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_vent.png", "modern_ish_generic_tech_vent.png"},
   groups = {snappy=1, choppy=2},
@@ -89,55 +104,115 @@ minetest.register_node("modern_ish:ceiling_speaker", {
 minetest.register_node("modern_ish:ceiling_light_1", {
   tiles = {"modern_ish_ceiling_light_1.png"},
   groups = {snappy=1, choppy=2},
-  light_source = 15,
+  light_source = 14,
   description = "A modern ceiling light.",
+})
+minetest.register_node("modern_ish:ceiling_light_2", {
+  tiles = {"modern_ish_ceiling_light_2.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 14,
+  description = "A modern ceiling light.",
+})
+minetest.register_node("modern_ish:ceiling_light_3", {
+  tiles = {"modern_ish_ceiling_light_3.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 14,
+  description = "A modern ceiling light.",
+})
+
+minetest.register_node("modern_ish:ceiling_tile_dark", {
+  tiles = {"modern_ish_ceiling_tile_dark.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 0,
+  description = "A dark, modern ceiling tile.",
+})
+minetest.register_node("modern_ish:ceiling_vent_dark", {
+  tiles = {"modern_ish_ceiling_vent_dark.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 0,
+  description = "A dark, modern ceiling vent.",
+})
+minetest.register_node("modern_ish:ceiling_speaker_dark", {
+  tiles = {"modern_ish_ceiling_speaker_dark.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 0,
+  description = "A dark, modern ceiling speaker.",
+})
+minetest.register_node("modern_ish:ceiling_light_1_dark", {
+  tiles = {"modern_ish_ceiling_light_1_dark.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 14,
+  description = "A dark framed, modern ceiling light.",
+})
+minetest.register_node("modern_ish:ceiling_light_2_dark", {
+  tiles = {"modern_ish_ceiling_light_2_dark.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 14,
+  description = "A dark framed, modern ceiling light.",
+})
+minetest.register_node("modern_ish:ceiling_light_3_dark", {
+  tiles = {"modern_ish_ceiling_light_3_dark.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 14,
+  description = "A dark framed, modern ceiling light.",
 })
 
 --lights
 minetest.register_node("modern_ish:light_lantern_1", {
   tiles = {"modern_ish_light_lantern_1.png"},
   groups = {snappy=1, choppy=2},
-  light_source = 15,
+  light_source = 14,
   description = "lantern light 1",
 })
 minetest.register_node("modern_ish:light_lantern_2", {
   tiles = {"modern_ish_light_lantern_2.png"},
   groups = {snappy=1, choppy=2},
-  light_source = 15,
+  light_source = 14,
   description = "lantern light 2",
 })
 minetest.register_node("modern_ish:light_lantern_3", {
   tiles = {"modern_ish_light_lantern_3.png"},
   groups = {snappy=1, choppy=2},
-  light_source = 15,
+  light_source = 14,
   description = "lantern light 3",
 })
 minetest.register_node("modern_ish:light_lantern_4", {
   tiles = {"modern_ish_light_lantern_4.png"},
   groups = {snappy=1, choppy=2},
-  light_source = 15,
+  light_source = 14,
   description = "lantern light 4",
 })
+minetest.register_node("modern_ish:light_minilamp", {
+  tiles = {"modern_ish_light_minilamp.png"},
+  inventory_image = "modern_ish_light_minilamp.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 14,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "a small wallmounted light",
+  selection_box = {
+    type = "wallmounted",
+    },
+})
+minetest.register_node("modern_ish:light_minilamp_2", {
+  tiles = {"modern_ish_light_minilamp_2.png"},
+  inventory_image = "modern_ish_light_minilamp_2.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 14,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "a small, round wallmounted light",
+  selection_box = {
+    type = "wallmounted",
+    },
+})
 
---floors
-minetest.register_node("modern_ish:floor_industrial", {
-  tiles = {"modern_ish_floor_industrial.png"},
-  groups = {snappy=1, choppy=2},
-  light_source = 0,
-  description = "An industrial floor.",
-})
-minetest.register_node("modern_ish:floor_pattern_1", {
-  tiles = {"modern_ish_floor_pattern_1.png"},
-  groups = {snappy=1, choppy=2},
-  light_source = 0,
-  description = "patterned floor 1.",
-})
-minetest.register_node("modern_ish:floor_pattern_2", {
-  tiles = {"modern_ish_floor_pattern_2.png"},
-  groups = {snappy=1, choppy=2},
-  light_source = 0,
-  description = "patterned floor 2.",
-})
 --climbing walls and ladders and such.
 minetest.register_node("modern_ish:wall_climbing_wall_1", {
   tiles = {"modern_ish_wall_climb1.png"},
@@ -208,7 +283,7 @@ minetest.register_node("modern_ish:roofing_industrial", {
 minetest.register_node("modern_ish:tricks_psudosky_day", {
   tiles = {"modern_ish_tricks_psudosky_day.png"},
   groups = {snappy=1, choppy=2},
-  light_source = 15,
+  light_source = 14,
   description = "Psodo daytime Sky block",
 })
 minetest.register_node("modern_ish:tricks_psudosky_night", {
@@ -217,3 +292,7 @@ minetest.register_node("modern_ish:tricks_psudosky_night", {
   light_source = 6,
   description = "Psodo nighttime Sky block",
 })
+--run subscripts
+modpathis=minetest.get_modpath("modern_ish")
+dofile(modpathis.."/walls.lua")
+dofile(modpathis.."/floors.lua")
