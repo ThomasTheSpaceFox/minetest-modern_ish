@@ -16,6 +16,7 @@ minetest.register_node("modern_ish:exclamation_block", {
   light_source = 4,
   description = "a block of exclamation.",
 })
+
 --various nerdy goodies
 minetest.register_node("modern_ish:stuff_terminal_computer", {
   tiles = {"modern_ish_generic_tech_plain.png","modern_ish_generic_tech_bottom.png","modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_plain.png", "modern_ish_generic_tech_vent.png", "modern_ish_stuff_terminal_computer_front.png"},
@@ -31,6 +32,7 @@ minetest.register_node("modern_ish:stuff_gui_computer", {
   paramtype2 = "facedir",
   description = "a gui based computer.",
 })
+
 minetest.register_node("modern_ish:stuff_terminal_flatscreen", {
   tiles = {"modern_ish_stuff_terminal_flatscreen.png"},
   inventory_image = "modern_ish_stuff_terminal_flatscreen.png",
@@ -296,3 +298,5 @@ minetest.register_node("modern_ish:tricks_psudosky_night", {
 modpathis=minetest.get_modpath("modern_ish")
 dofile(modpathis.."/walls.lua")
 dofile(modpathis.."/floors.lua")
+dofile(modpathis.."/decor.lua")
+dofile(modpathis.."/neon.lua")

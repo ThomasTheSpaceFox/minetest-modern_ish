@@ -17,3 +17,9 @@ minetest.register_node("modern_ish:floor_pattern_2", {
   light_source = 0,
   description = "patterned floor 2.",
 })
+minetest.register_node("modern_ish:floor_warning", {
+  tiles = {"modern_ish_floor_warning.png"},
+  groups = {snappy=1, choppy=2},
+  light_source = 0,
+  description = "striped warning floor.",
+})
