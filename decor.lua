@@ -12,6 +12,7 @@ minetest.register_node("modern_ish:stuff_photos", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "photos in picture frames.",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },
@@ -27,6 +28,7 @@ minetest.register_node("modern_ish:stuff_pinboard", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "A cork pinboard",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },
@@ -42,6 +44,7 @@ minetest.register_node("modern_ish:stuff_wallart1", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "modern art",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },
@@ -57,6 +60,7 @@ minetest.register_node("modern_ish:stuff_wallart2", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "sunset painting",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },
@@ -73,6 +77,7 @@ minetest.register_node("modern_ish:stuff_whiteboard", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "a whiteboard",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },
@@ -89,6 +94,7 @@ minetest.register_node("modern_ish:stuff_floormat", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "a blue floor mat",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },
@@ -104,6 +110,7 @@ minetest.register_node("modern_ish:stuff_floormat_red", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "a red floor mat",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },
@@ -119,6 +126,7 @@ minetest.register_node("modern_ish:stuff_floormat_green", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "a green floor mat",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },
@@ -134,6 +142,7 @@ minetest.register_node("modern_ish:stuff_floormat_grey", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "a grey floor mat",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },

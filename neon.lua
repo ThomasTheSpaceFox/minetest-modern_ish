@@ -11,6 +11,7 @@ minetest.register_node("modern_ish:neon_open", {
   sunlight_propagates = true,
   paramtype2 = "wallmounted",
   description = "a neon open sign.",
+  is_ground_content = false,
   selection_box = {
     type = "wallmounted",
     },
