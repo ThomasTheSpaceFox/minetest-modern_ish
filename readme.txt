@@ -1,7 +1,7 @@
 modern_ish
 a mod for minetest
 
-(c) 2016-2017 Thomas Leathers
+Copyright (c) 2016-2019 Thomas Leathers
 
 modern_ish is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -16,3 +16,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with modern_ish.  If not, see <http://www.gnu.org/licenses/>.
 
+all images and other media content, unless otherwise noted,
+are licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to
+Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+Image and other media content created by, (unless otherwise noted below) Thomas Leathers.
