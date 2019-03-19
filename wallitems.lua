@@ -85,3 +85,55 @@ minetest.register_node("modern_ish:wi_speaker", {
     type = "wallmounted",
     },
 })
+
+
+minetest.register_node("modern_ish:wi_air_dryer", {
+  tiles = {"modern_ish_wi_air_dryer.png"},
+  inventory_image = "modern_ish_wi_air_dryer.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 0,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "A wall-mounted air dryer for restrooms.",
+  is_ground_content = false,
+  selection_box = {
+    type = "wallmounted",
+    },
+})
+
+minetest.register_node("modern_ish:wi_toilet_paper", {
+  tiles = {"modern_ish_wi_toilet_paper.png"},
+  inventory_image = "modern_ish_wi_toilet_paper.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 0,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "A wall-mounted toilet paper holder.",
+  is_ground_content = false,
+  selection_box = {
+    type = "wallmounted",
+    },
+})
+
+minetest.register_node("modern_ish:wi_paper_towels", {
+  tiles = {"modern_ish_wi_paper_towels.png"},
+  inventory_image = "modern_ish_wi_paper_towels.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 0,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "A wall-mounted paper towel holder.",
+  is_ground_content = false,
+  selection_box = {
+    type = "wallmounted",
+    },
+})

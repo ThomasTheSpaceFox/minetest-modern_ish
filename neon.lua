@@ -102,3 +102,20 @@ minetest.register_node("modern_ish:neon_music", {
     type = "wallmounted",
     },
 })
+
+minetest.register_node("modern_ish:neon_train", {
+  tiles = {"modern_ish_sign_train.png"},
+  inventory_image = "modern_ish_sign_train.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 6,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "neon train sign",
+  is_ground_content = false,
+  selection_box = {
+    type = "wallmounted",
+    },
+})
