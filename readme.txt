@@ -1,5 +1,5 @@
 modern_ish
-a mod for minetest
+a 'modern-ish' modpack for minetest
 
 Copyright (c) 2016-2019 Thomas Leathers
 

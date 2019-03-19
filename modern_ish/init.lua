@@ -1,3 +1,5 @@
+modern_ish = {}
+
 minetest.register_node("modern_ish:question_block", {
   tiles = {"modern_ish_qblock.png"},
   groups = {snappy=1, choppy=2},
