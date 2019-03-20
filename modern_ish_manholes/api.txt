@@ -16,3 +16,6 @@ description: The inventory description of the manhole.
 ----optional:
 
 recipe: define a crafting recipe for the manhole, to be registered automatically.
+closed_sun = true: sunlight should go through manhole even when closed. (example: glass hatch)
+
+NOTICE: closed_sun currently sets both closed and open sunlight propagation. see comment in init.lua

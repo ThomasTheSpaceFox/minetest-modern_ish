@@ -1,14 +1,19 @@
+
+--Lighting problems, see comments around line 43 for temporary half-measure.
 modern_ish_manholes = {}
 modern_ish_manholes.register = function(name, def)
   if not name:find(":") then
     name = "modern_ish_manholes:"..name
+  end
+  if not def.closed_sun then
+    def.closed_sun = false
   end
   minetest.register_node(name.."_closed", {
     tiles = def.tiles_closed,
     groups = {snappy=1, choppy=3},
     paramtype = "light",
     
-    sunlight_propagates = true,
+    sunlight_propagates = def.closed_sun,
     description = def.description,
     drawtype = "nodebox",
     node_box = {
@@ -19,6 +24,7 @@ modern_ish_manholes.register = function(name, def)
     on_rightclick = function (pos, node)
       node.name = name.."_open"
       minetest.set_node(pos, node)
+      
     end
   })
   
@@ -34,7 +40,10 @@ modern_ish_manholes.register = function(name, def)
       type = "fixed",
       fixed = {-0.5, 0.4, -0.5, 0.5, 0.5, 0.5},
       },
-    sunlight_propagates = true,
+    --IDEALLY this would ALWAYS be true, cannot seem to get around lighting
+    --glitches related to swapping a node with no sunlight propagation, with
+    --one that has it. the documentation says nothing on this from what i could tell.
+    sunlight_propagates = def.closed_sun,
     description = def.description,
     is_ground_content = false,
     on_rightclick = function (pos, node)
@@ -87,12 +96,14 @@ modern_ish_manholes.register("bronze", {
   tiles_open = bronze_manhole_tiles_open,
   tiles_closed = bronze_manhole_tiles_closed,
   description="Bronze Manhole",
+  closed_sun = true,
 })
 
 modern_ish_manholes.register("steel", {
   tiles_open = steel_manhole_tiles_open,
   tiles_closed = steel_manhole_tiles_closed,
   description="Steel Manhole",
+  closed_sun = true,
 })
 
 --gold manhole
@@ -100,6 +111,7 @@ modern_ish_manholes.register("gold", {
   tiles_open = gold_manhole_tiles_open,
   tiles_closed = gold_manhole_tiles_closed,
   description="Gold Manhole",
+  closed_sun = true,
 })
 
 --Steel manhole
@@ -121,6 +133,7 @@ modern_ish_manholes.register("gold_solid", {
   tiles_open = gold_manhole_tiles_open,
   tiles_closed = gold_manhole_solid_tiles_closed,
   description="Gold Manhole (solid plate)",
+  
 })
 
 
@@ -136,6 +149,7 @@ modern_ish_manholes.register("glass_hatch", {
   tiles_open = steel_manhole_tiles_open,
   tiles_closed = glass_hatch_tiles_closed,
   description="glass hatch",
+  closed_sun = true,
 })
 
 
