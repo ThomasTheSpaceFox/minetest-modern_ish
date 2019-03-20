@@ -1,7 +1,7 @@
 modern_ish
 a 'modern-ish' modpack for minetest
 
-Copyright (c) 2016-2019 Thomas Leathers
+Copyright (c) 2016-2019 Thomas Leathers and contributors
 
 modern_ish is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
