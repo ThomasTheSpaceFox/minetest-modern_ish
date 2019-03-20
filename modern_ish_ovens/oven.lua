@@ -144,3 +144,6 @@ Recipe won't even be executed if there is no raw chicken in input ]]--
 oven.register_recipe("mobs_mc:beef_raw", "test:beef_cooked")
 oven.register_recipe("farming:coffee_cup", "farming:coffee_cup_hot") -- What a crutch there was...
 -- Add needed recipes as you go, note that other mods can add more recipes too
+
+--bread from minetest_game's farming
+oven.register_recipe("farming:flour", "farming:bread")
