@@ -15,6 +15,22 @@ minetest.register_node("modern_ish:light_minilamp", {
     type = "wallmounted",
     },
 })
+minetest.register_node("modern_ish:light_minilamp_90", {
+  tiles = {"modern_ish_light_minilamp_90.png"},
+  inventory_image = "modern_ish_light_minilamp_90.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 14,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "a small wall-mounted light (rotated 90 Degrees)",
+  is_ground_content = false,
+  selection_box = {
+    type = "wallmounted",
+    },
+})
 minetest.register_node("modern_ish:light_minilamp_2", {
   tiles = {"modern_ish_light_minilamp_2.png"},
   inventory_image = "modern_ish_light_minilamp_2.png",
@@ -49,7 +65,38 @@ minetest.register_node("modern_ish:light_minilamp_3", {
     },
 })
 
-
+minetest.register_node("modern_ish:light_minilamp_3_90", {
+  tiles = {"modern_ish_light_minilamp_3_90.png"},
+  inventory_image = "modern_ish_light_minilamp_3_90.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 14,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "a small, wall-mounted florescent lamp (rotated 90 degrees)",
+  is_ground_content = false,
+  selection_box = {
+    type = "wallmounted",
+    },
+})
+minetest.register_node("modern_ish:light_minilamp_4", {
+  tiles = {"modern_ish_light_minilamp_4.png"},
+  inventory_image = "modern_ish_light_minilamp_4.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 14,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "a small, wall-mounted florescent lamp",
+  is_ground_content = false,
+  selection_box = {
+    type = "wallmounted",
+    },
+})
 
 --Other wallmounted things
 minetest.register_node("modern_ish:wi_phone", {
