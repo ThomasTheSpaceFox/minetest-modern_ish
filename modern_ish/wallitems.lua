@@ -98,6 +98,22 @@ minetest.register_node("modern_ish:light_minilamp_4", {
     },
 })
 
+minetest.register_node("modern_ish:round_light", {
+  tiles = {"modern_ish_round_light.png"},
+  inventory_image = "modern_ish_round_light.png",
+  groups = {snappy=1, choppy=2},
+  paramtype = "light",
+  light_source = 14,
+  walkable = false,
+  drawtype = "signlike",
+  sunlight_propagates = true,
+  paramtype2 = "wallmounted",
+  description = "a large, circular light.",
+  is_ground_content = false,
+  selection_box = {
+    type = "wallmounted",
+    },
+})
 --Other wallmounted things
 minetest.register_node("modern_ish:wi_phone", {
   tiles = {"modern_ish_wi_phone.png"},
